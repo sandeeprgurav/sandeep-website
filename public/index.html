@@ -1,43 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sandeep Gurav Profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body class="bodyCss">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<!-- Navigation -->
+<nav class="container navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<b><a class="navbar-brand nameCss" href="#"> Sandeep Gurav</a></b>
+		<div class ="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#aboutMe" >About me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skillSet" >Skill Set</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#education" data-target="#jumbotron">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience" >Experience</a>
+				</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sampleProjects" >Sample Projects</a>
+        </li>
+        <li class="nav-item">
+					<a class="nav-link" href="#connect" >Connect</a>
+				</li>
+			</ul>
+	</div>
+</nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<!--- Two Column Section -->
+<div class="container">
+	<div id="aboutMe" class="row jumbotron rounded">
+   		<div class="col-md-12 col-lg-10 ">
+				<h3>About me</h3>
+				<hr/>
+				<p>Hello,</p>
+				<ul style="list-style-type:square;">
+<li>Almost, 10 years of hands-on web application’s development experience as a full stack developer (OCWCD and SCJP Certified) using Java, J2EE and JavaScript related frameworks. </li>
+<li>Great experience in designing and developing SaaS based products and using IAAS platform.  </li>
+<li>Experience in the development of several projects at small, medium and large scale in banking, travel and vendor management functional areas.</li>
+<li>Experience in all the phases of Software Development Life Cycle (SDLC) including Analysis, Design, Development, Documentation, Testing, Deployment, Version Control and enhancing existing systems.</li>
+<li>Experience in building software modules and components through an extensive application of design patterns, object oriented programming and foundational data structures.</li>
+<li>Experience in the Agile development model. Worked as a Scrum Master. Extensively used Agile tools like JIRA and Confluence.  </li>
+<li>Experience in developing  business components and building RESTful services using Spring Boot, Node JS, express and ES6. </li>
+<li>Managed a team to produce desired results. Responsible for performance appraisals, career path guidance and technical trainings. </li>
+<li>Experience in automation testing frameworks like Selenium.  </li>
+<li>Experience in production support for deployment and code fixes.  </li>
+<li>Experience in working with databases such as MS-SQL, MongoDb, Oracle, MySql and AWS DynamoDB.</li>
+<li>Experience in CI/CD piplines using Jenkins, Netlify, Seed and AWS. </li>
+<li>Experience in code reviews, refactoring the code, merging the code, resolving merge conflicts and maintaining the source code versions using tools such as GIT, SVN and MKS. </li>
+       </ul>
+				<div class="row">
+				  <div class="col-sm-5"><b>Name:</b> Sandeep Gurav</div>
+				  <div class="col-sm-5"><b>Location:</b>  Delaware, USA</div>
+				</div>
+				<div class="row">
+				  <div class="col-sm-5"><b>Birthday:</b> May,1986</div>
+				  <div class="col-sm-5"><b>Email:</b> sandeeprgurav@gmail.com</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-2">
+				<img src="profile.png" class="img-fluid">
+				<div class="title">Sandeep Gurav</div>
+				<div class="title">Fullstack Developer</div>
+			</div>
+  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+ <div id="skillSet" class="jumbotron text-black rounded">
+		<h3>Skill Set:</h3>
+		<hr/>
+		<p><b>Languages:</b> : Java, JSP, Servlet, HTML, CSS, jQuery, SQL, JavaScript, ES6 and Typescript.</p>
+		<p><b>Frameworks:</b> ReactJS, NodeJS, Spring Boot, Spring Cloud, REST API, Spring3.0, Hibernate3.0, Struts1.3, Apache Kafka, Jasper Report, AWS, Microservices and GWT.</p>
+		<p><b>Automation Testing Frameworks:</b> Selenium WebDriver, Cucumber, TestNG.</p>
+		<p><b>Databases:</b> Mongo Db, MS-SQL, Oracle,SAP HANA and AWS Dynamo DB</p>
+		<p><b>Cloud Platform:</b> Amazon Web Services (AWS).</p>
+		<p><b>IDE:</b> IntelliJ, Eclipse and Atom.</p>
+    <p><b>Operating Systems:</b> WINDOWS 10 and LINUX.</p>
+		<p><b>Version Control Systems:</b> GIT, SVN and MKS.</p>
+    <p><b>Continuous Integration:</b> Jenkins, SEED and Netlify.</p>
+		<p><b>Build Tools:</b> Ant, Maven, Gradle, NPM and Webpack.</p>
+    <p><b>UI Frameworks:</b> Amazon Web Services (AWS).</p>
+		<p><b>IDE:</b> Bootstrap, SASS and LESS.</p>
+		<br/>
+  </div>
+
+ <div id="education" class="jumbotron rounded">
+  <h3>Education:</h3>
+	<hr/>
+	<div class="conainer-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<img src="wilmington.jpg" class="align-self-start mr-3" style="width:160px">
+				<h3>MS-IT</h3>
+				<p>Wilmington University, New Castle, Delaware,19720,USA</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<img src="mumbaiUniversity.png" class="align-self-start mr-3" style="width:160px">
+				<h3>MBA-IT</h3>
+				<p>Mumbai University, Mumbai, Maharashtra, India</p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<img src="mumbaiUniversity.png" class="align-self-start mr-3" style="width:160px">
+				<h3>BE-EXTC</h3>
+				<p>Mumbai University, Mumbai, Maharashtra, India</p>
+			</div>
+		</div>
+	</div>
+	<br/>
+</div>
+
+<div id="experience" class="jumbotron rounded">
+ <h3>Experience:</h3>
+ <hr/>
+ <div class="media">
+	 <img src="sap.png" class="align-self-start mr-3" style="width:60px">
+	 <div class="media-body">
+		 <h4>SAP Labs (NAPERVILLE, CHICAGO, USA)  </h4>
+     <p>Project:SAP Fieldglass cloud-based product (SAAS) </p>
+		 <p>This application provides the leading SaaS platform to procure and manage contingent workers,
+			 services such as statement of work projects, independent contractors, and specialized talent pools.
+			 This application used to help Global 2000 firms in nearly 70 countries.</p>
+		 <b>Responsibilities:</b>
+		 <ul>
+				 <li>Development of new features using Struts, Spring, JQuery, custom frameworks etc. </li>
+			   <li>Development of internal projects using ReactJs, Spring Boot and Mongodb. </li>
+				 <li>Participated in design meeting for new features with BA, QA and other stakeholders.</li>
+				 <li>Implemented continuous build, testing and deploy using Jenkins for internal projects.</li>
+				 <li>Worked on POC using Apache Kafka to improve throughput of msessaging servcies.</li>
+				 <li>Worked on AWS to develop POC to store files data into cloud databases for easy scalability.</li>
+				 <li>Developed Rest API using Spring Boot for mobile application’s front end.</li>
+				 <li>Worked as lead developer to convert monolithic application to microservices based application.</li>
+				 <li>Developed basic automation testing framework for QA team using Selenium and TestNG.</li>
+         <li>Utilized AWS cloud watch to monitor resources such as EC2 and DynamoDB Table.</li>
+				 <li>Environment: Java, J2EE, Struts, JQuery, Ajax, Ant, MKS and  MSSQL.</li>
+     </ul>
+     <p>Project:Internal Web Application to manage employee’s information.  </p>
+		 <p>This application provides servcies to track employees details like personal information, eduaction, work experince, birthdate, current projects, certifications, attended trainings etc.</p>
+		 <b>Responsibilities:</b>
+		 <ul>
+				 <li>Responsible to design and architect web application using ReactJs, Spring Boot and MongoDb. </li>
+			   <li>Developed REST API using Spring Boot by implementing filtering, logging, exception handling,   caching and swagger features.  </li>
+				 <li>Developed generic components using React for the web application. </li>
+				 <li>Implemented React’s state management using redux and saga. </li>
+				 <li>Worked on react-bootstrap to develop UI components. </li>
+				 <li>Implemented continuous build, testing and deploy using Jenkins, Netlify, AWS and Seed. </li>
+				 <li>Worked on AWS cloud environment for file storage in S3 and deployment using EC2. </li>
+				 <li>Developed basic automation testing framework for QA team using Selenium and TestNG. </li>
+				 <li>Environment: ReactJs, REST web services using Spring Boot, AspectJ, MongoDb, Serverless API,   YAML, Gradle, Netlify, Seed. AWS:DynamoDB, EC2 and S3.</li>
+     </ul>
+	 </div>
+ </div>
+ <br/>
+
+ <div class="media">
+	 <img src="jet.png" class="align-self-start mr-3" style="width:60px">
+	 <div class="media-body">
+		 <h4>GLOBAL TRAVEL SOLUTIONS - JET ENTERPRISE (MUMBAI, INDIA) </h4>
+     <p>Project:Integrated Booking Engine </p>
+		 <p>This system facilitating users to plan and do booking for all domestic and international flights linked with hotels,
+			 rented Car and other relevant stuff to provide as complete travel package with the help of shopping cart. </p>
+		 <b>Responsibilities:</b>
+		 <ul>
+				 <li>Designed and developed User Management, Airline schedule and Booking  modules. </li>
+			   <li>Design, develop and test HTML5, CSS3, BootStrap, JavaScript and jQuery that meets accessibility and web browser standards for website. </li>
+         <li>Used JIRA as the bug tracking system to track and maintain the history of bugs/issues on everyday basis. </li>
+         <li>Developed exception, caching, logging frameworks. </li>
+         <li>Interacted with Testing Team, Scrum Masters and Business Analysts for fixing of Issues. </li>
+         <li>Performed the System Testing, Regression Testing for Complete UI after fixing the Issues which are reported by Testing Team. </li>
+         <li>Extensively used GIT for version controlling and regularly pushed the code to GitHub. </li>
+         <li>Environment: GWT, Spring(MVC, AOP, DAO, ORM, DI), Hibernate 3.0, Maven and MSSQL DB. </li>
+     </ul>
+	 </div>
+ </div>
+ <br/>
+
+ <div class="media">
+	 <img src="isg.png" class="align-self-start mr-3" style="width:60px">
+	 <div class="media-body">
+		 <h4>INSOLUTION GLOBAL PVT LTD. (MUMBAI, INDIA) </h4>
+     <p>Project: Credit Card Reconciliation System </p>
+		 <p>This system processes all credit card operation related data files e.g. Switch, payment, billing, merchant settlement files.
+			  Using this system reconciliation of all these data files with respective data files can carried out on daily basis to check the authorization,
+			 billing and received payments transactions are correct or not .</p>
+		 <b>Responsibilities:</b>
+		 <ul>
+				 <li>Development of ‘File Processing and Reconciliation’ module which process all uploaded files into database server and reconciled the all uploaded data. (Struts, JQuery,MSSQL database) </li>
+			   <li>Development of all MIS reports for uploaded and reconciled sources.</li>
+         <li>Worked as onsite coordinator in UAE for Mashreq and Abu Dabhi Banks.</li>
+         <li>Deployed and tested web applications in Mashreq and Abu Dabhi Banks.</li>
+         <li>Performed code validation and peer reviews.</li>
+         <li>Experience in requirement gathering at client’s locations. </li>
+         <li>Developed reusable framework for login, menus, admin and security features using Struts and Oracle Db. </li>
+         <li>Environment: JSP, Servlet, JQuery, Ajax, Struts 1.2, Ant and Oracle.</li>
+     </ul>
+	 </div>
+ </div>
+</div>
+
+<!--- Connect -->
+<div id="sampleProjects" class="jumbotron rounded">
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+	   <div class="col-12">
+			 <h2>Sample Projects </h2>
+		 </div>
+		 <div class="col-12  padding">
+
+       <p><a href="https://ols-app.netlify.com/" target="_blank">OLS Client Site</a></p>
+       <p><a href="https://3.134.234.45:8443/swagger/index.html" target="_blank">OLS REST API</a></p>
+       <p><a href="https://flow-chart-app.netlify.com/" target="_blank">Flow Chart App</a></p>
+
+
+
+		 </div>
+	</div>
+	</div>
+	</div>
+
+
+<!--- Connect -->
+<div id="connect" class="jumbotron rounded">
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+	   <div class="col-12">
+			 <h2>Connect </h2>
+		 </div>
+		 <div class="col-12 social padding">
+			 <a href="https://www.facebook.com/sandeep.gurav.357" target="_blank"><i class="fab fa-facebook"></i></a>
+			 <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+			 <a href="https://aboutme.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+			 <a href="https://www.linkedin.com/in/sandeep-gurav-41001428/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			 <a href="https://www.youtube.com/channel/UCmJuG155Jo30S7PF6mCznpA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+		 </div>
+	</div>
+	</div>
+	</div>
+</div>
+<div id="root">
+</div>
+</body>
 </html>
